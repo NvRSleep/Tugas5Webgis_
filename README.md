@@ -111,7 +111,7 @@ Repositori ini dilisensikan di bawah **MIT License**. Silakan lihat file [LICENS
 
 - **Nama**: M. Gilang Martiansyah M
 - **Email**: mgilang.121450056@student.itera.ac.id
-- **GitHub**: [github.com/username](https://github.com/NvRSleep)
+- **GitHub**: [github.com/NvRSleeP](https://github.com/NvRSleep)
 
 ---
 
