@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas WebGIS - PHP Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Tugas WebGIS - PHP Functions</h1>
+            <p>Implementasi Fungsi-fungsi PHP: SWITCH, LOOPING, WHILE, DO WHILE, dan FOR</p>
+        </div>
+    </header>
+
+    <section id="task">
+        <div class="container">
+            <h2>Tugas</h2>
+            <p>Mengimplementasikan Bahasa PHP dari Fungsi-fungsi berikut dan memberikan penjelasannya:</p>
+            <ul>
+                <li>SWITCH</li>
+                <li>LOOPING</li>
+                <li>WHILE</li>
+                <li>DO WHILE</li>
+                <li>FOR</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hyperlink to the PDF Report -->
+    <section id="report">
+        <div class="container">
+            <h2>Laporan Tugas</h2>
+            <p>Untuk melihat laporan tugas secara lengkap, silakan klik link di bawah ini:</p>
+            <a href="LaporanTugas5.pdf" target="_blank" class="btn btn-primary">Download Laporan Tugas 5</a>
+        </div>
+    </section>
+
+    <section id="switch">
+        <div class="container">
+            <h2>SWITCH</h2>
+            <p>SWITCH digunakan untuk memilih salah satu dari beberapa blok kode berdasarkan nilai ekspresi tertentu.</p>
+            <pre><code>
+$day = "Monday";
+switch ($day) {
+    case "Monday":
+        echo "It's Monday, start of the work week!";
+        break;
+    case "Friday":
+        echo "It's Friday, time to relax!";
+        break;
+    default:
+        echo "Have a nice day!";
+}
+            </code></pre>
+            <p><strong>Output:</strong> It's Monday, start of the work week!</p>
+            <p>Penjelasan: Nilai variabel $day diperiksa menggunakan switch. Berdasarkan nilai $day, kode dalam blok case yang sesuai akan dijalankan. Jika tidak ada nilai yang cocok, blok default akan dijalankan.</p>
+        </div>
+    </section>
+
+    <section id="looping">
+        <div class="container">
+            <h2>LOOPING</h2>
+            <p>Looping adalah proses yang digunakan untuk mengulangi eksekusi blok kode tertentu selama suatu kondisi terpenuhi. Berikut adalah contoh dengan menggunakan <strong>for loop</strong>:</p>
+            <pre><code>
+for ($i = 1; $i <= 10; $i++) {
+    echo "Juara $i, ";
+}
+            </code></pre>
+            <p><strong>Output:</strong> Juara 1, Juara 2, Juara 3, ..., Juara 10,</p>
+            <p>Penjelasan: Kode ini menggunakan perulangan <code>for</code> untuk mencetak string "Juara" diikuti dengan angka dari 1 sampai 10.</p>
+        </div>
+    </section>
+
+    <section id="while">
+        <div class="container">
+            <h2>WHILE</h2>
+            <p>WHILE adalah jenis loop yang terus berjalan selama kondisinya bernilai true.</p>
+            <pre><code>
+$count = 1;
+while ($count <= 5) {
+    echo "This is iteration number $count<br>";
+    $count++;
+}
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <p>This is iteration number 1<br>
+                This is iteration number 2<br>
+                This is iteration number 3<br>
+                This is iteration number 4<br>
+                This is iteration number 5<br>
+            </p>
+            <p>Penjelasan: Loop dimulai dengan mengevaluasi kondisi <code>$count <= 5</code>. Selama kondisi bernilai true, kode dalam loop akan dijalankan dan nilai <code>$count</code> akan bertambah setelah setiap iterasi.</p>
+        </div>
+    </section>
+
+    <section id="do-while">
+        <div class="container">
+            <h2>DO WHILE</h2>
+            <p>DO WHILE mirip dengan <code>while</code>, tetapi memastikan blok kode dijalankan setidaknya sekali sebelum memeriksa kondisinya.</p>
+            <pre><code>
+$count = 1;
+do {
+    echo "This is iteration number $count<br>";
+    $count++;
+} while ($count <= 5);
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <p>This is iteration number 1<br>
+                This is iteration number 2<br>
+                This is iteration number 3<br>
+                This is iteration number 4<br>
+                This is iteration number 5<br>
+            </p>
+            <p>Penjelasan: Kode ini memastikan bahwa blok kode dijalankan setidaknya sekali, meskipun kondisi awal tidak terpenuhi.</p>
+        </div>
+    </section>
+
+    <section id="for">
+        <div class="container">
+            <h2>FOR</h2>
+            <p>FOR digunakan untuk mengulangi blok kode dengan jumlah iterasi yang ditentukan.</p>
+            <pre><code>
+for ($i = 1; $i <= 5; $i++) {
+    echo "This is iteration number $i<br>";
+}
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <p>This is iteration number 1<br>
+                This is iteration number 2<br>
+                This is iteration number 3<br>
+                This is iteration number 4<br>
+                This is iteration number 5<br>
+            </p>
+            <p>Penjelasan: Loop <code>for</code> digunakan untuk menjalankan kode dengan jumlah iterasi yang sudah ditentukan, dari 1 hingga 5.</p>
+        </div>
+    </section>
+
+    <section id="combination">
+        <div class="container">
+            <h2>Kombinasi Contoh</h2>
+            <p>Berikut adalah contoh implementasi beberapa fungsi sekaligus:</p>
+            <pre><code>
+$day = "Monday";
+switch ($day) {
+    case "Monday":
+        echo "Start of the work week!<br>";
+        break;
+    default:
+        echo "Enjoy your day!<br>";
+}
+$count = 1;
+while ($count <= 3) {
+    echo "Iteration $count<br>";
+    $count++;
+}
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <p>Start of the work week!<br>
+                Iteration 1<br>
+                Iteration 2<br>
+                Iteration 3<br>
+            </p>
+            <p>Penjelasan: Program pertama mencetak pesan berdasarkan nilai $day menggunakan SWITCH. Kemudian, melakukan perulangan dengan WHILE untuk mencetak iterasi dari 1 hingga 3.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>© 2024 M. Gilang Martiansyah M | Tidak diperkenankan untuk plagiasi.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
